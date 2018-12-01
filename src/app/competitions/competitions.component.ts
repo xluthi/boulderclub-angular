@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Competition } from '../competition';
+import { COMPETITIONS } from '../mock-competitions';
 
 @Component({
   selector: 'app-competitions',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./competitions.component.scss']
 })
 export class CompetitionsComponent implements OnInit {
-  competition = 'Manche de la coupe provinciale jeune de blocs';
+  competitions = COMPETITIONS;
   constructor() { }
 
   ngOnInit() {
