@@ -1,4 +1,6 @@
-# BoulderclubAngularScss
+# BoulderClub Climbing application
+
+An angular project to manage a climbing boulder contest. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
