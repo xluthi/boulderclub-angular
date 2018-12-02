@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Competition } from '../competition';
-import { COMPETITIONS } from '../mock-competitions';
+import { CompetitionService } from '../competition.service';
 
 @Component({
   selector: 'app-competitions',
@@ -8,10 +8,16 @@ import { COMPETITIONS } from '../mock-competitions';
   styleUrls: ['./competitions.component.scss']
 })
 export class CompetitionsComponent implements OnInit {
-  competitions = COMPETITIONS;
-  constructor() { }
+  competitions: Competition[];
+  constructor(private competitionService: CompetitionService) { }
+
+  getCompetitions(): void {
+    this.competitionService.getCompetitions()
+      .subscribe(competitions => this.competitions = competitions);
+  }
 
   ngOnInit() {
+    this.getCompetitions();
   }
 
 }

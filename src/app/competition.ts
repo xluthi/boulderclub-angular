@@ -3,7 +3,11 @@ export class Ranking {
   name: string;
   code: string;
   boulders: number[];
-  athletes: { name: string, results: number[] }[];
+  athletes: {
+    name: string,
+    dossard: number,
+    results: number[]
+  }[];
 };
 
 export class Competition {

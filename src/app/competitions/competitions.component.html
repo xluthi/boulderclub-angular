@@ -17,7 +17,7 @@
       <tbody>
 
         <tr *ngFor="let competition of competitions">
-          <td><a href="#">{{competition.title}}</a></td>
+          <td><a routerLink="/competitions/{{competition.id}}">{{competition.title}}</a></td>
           <td>{{competition.date | date :"fullDate"}}</td>
           <td>{{competition.gym}}</td>
           <td><span *ngFor="let ranking of competition.rankings">{{ranking.code}}, </span> </td>

@@ -15,10 +15,12 @@ export const COMPETITIONS: Competition[] = [
         athletes: [
           {
             name: 'Toto',
+            dossard: 50,
             results: [2, 1, 0]
           },
           {
             name: 'Tutu',
+            dossard: 12,
             results: [1, 1, 0]
           }
         ]
@@ -31,10 +33,12 @@ export const COMPETITIONS: Competition[] = [
         athletes: [
           {
             name: 'Romeo',
+            dossard: 101,
             results: [2, 2, 2]
           },
           {
             name: 'Ulysse',
+            dossard: 102,
             results: [1, 0, 0]
           }
         ]
@@ -55,10 +59,12 @@ export const COMPETITIONS: Competition[] = [
         athletes: [
           {
             name: 'Romulus',
+            dossard: 210,
             results: [2, 2, 2, 2]
           },
           {
             name: 'Rémus',
+            dossard: 201,
             results: [1, 1, 2, 0]
           }
         ]
